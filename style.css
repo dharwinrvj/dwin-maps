@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*
+display a popup on click
+*/
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+/*
+change a map's style
+*/
+#menu {
+    position: absolute;
+
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+}

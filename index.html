@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAvGZFAIhtXQDT0/oAyKWUAId+eAC0cFMA5ublAMBvTQDTkXEAIonzAKeJeQDXoIkAYWCEAMXEwgAn4vkA16KMAJN4aACjop8A37ipAPD7/QDy1boAZ2VuAJeEeACBgHwAfoiHAIyK9QD7+PUAxnhWAFFLRQD01rgAxrGmACrY7QCJhX8AIR7XAHBu8wCEZVUAamlkALptTQDtzr8A0c/OALr0/ADMhWQA/efLAF9cWADKpowAm2NKAI2LiABhU0gA+d/BAH9nWQC9qZUA9OrlAEtJ2gBWVHgAU1JMALm4tgDWt6cAXVZRAOfn5gC4XzwA++PHAJeWkwDjwbQAXej6AB8b4gCEcGIAf8bMAPDg2QC2ZUUA8vLxAGtYTACwmIUA05d+AOzSxwDKhmwAkvD7AFh6egDQ0M4AiWJQAMOsnwDWu64ALsTWAMi4rwDs1s0A26OGAOfMwADz8vIAODTvAB8n4wCioZ8AvqCQAPLUugDhspYANZ2nAG9hVQC4akkA7NjIAJ1+bQBaUUkAubm2ABsY7QA05PkA5ca5AJiXkwD9/f0AS3h6ANvb2gDv7/wAY1ZMAPLRswCLiocAWnBvAMTEwQBoYlwA4eH7AG1dUQDuzLEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADsvLGNtNxhkAAAAAAAAABJtSG4xKz0tJHIOAAAAAGhCHnVVCV0VKjwGbWQAAE5fXEkTVGk0VmcQHEUwZAAvM1FDcHFpaWlpaUo8YDpXN2FaKQ9eGUZpaWlpPzxPEm1TWmlMD1JNa2lpaWlLJiUdH29paUAPIGpraWlpVgEdJTk3RmkUZgpZNkZpaRs8bRIRIT5paQNYZUENRmlpCDdXOjk3OGlpbBplIhZGRC4vAGRtUDc4aWlpcyM1RgxHTgAAZG0EBW9xB2koOCcyaAAAAAAOcgJbCxcXC2JtEgAAAAAAAFdkGDd0YywvOwAAAP//AADgHwAAwAcAAIADAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAADAAQAA4AMAAPAHAAA="
+        rel="icon" type="image/x-icon" />
+    <title>Dharwin Maps</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    <script src='./script.js' defer></script>
+</head>
+<body>
+    <!--display driving directions-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js">
+    </script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+        type="text/css" />
+    <!--map-->
+    <div id='map'></div>
+    <!--change a map's style-->
+    <div id="menu">
+        <input id="streets-v11" type="radio" name="rtoggle" value="streets" checked="checked" />
+        <label for="streets-v11">Streets</label>
+        <input id="light-v10" type="radio" name="rtoggle" value="light" />
+        <label for="light-v10">Light</label>
+        <input id="dark-v10" type="radio" name="rtoggle" value="dark" />
+        <label for="dark-v10">Dark</label>
+        <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors" />
+        <label for="outdoors-v11">Outdoors</label>
+        <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" />
+        <label for="satellite-v9">Satellite</label>
+    </div>
+</body>
+</html>
