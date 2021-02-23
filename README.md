@@ -1,6 +1,6 @@
 # geo-locator
 ## Map, Geo Locator, Directions using MapBoxAPI
-## Live Demo: https://dharwinjruppa.github.io/geo-locator
+## Live Demo: https://dharwinrvj.github.io/geo-locator
 
 <img src="demo_images/0.png"/>
 
